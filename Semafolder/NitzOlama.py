@@ -4,139 +4,132 @@ import ollama
 
 
 class LocalAnalyzer:
-    def __init__(self, model_name="llama3.2:3b"):
-        """
-        Initializes the analyzer with a specific LLM and sets up category counters.
-        """
+    def __init__(self, model_name="qwen2.5:0.5b"):
         self.model = model_name
-        # Defined categories for counting and classification
         self.counts = {
             "Education": 0,
             "Entertainment": 0,
             "Games": 0,
             "Adult": 0,
+            "brain root": 0,  # Добавлено, так как было в промпте
             "Other": 0
         }
         print(f"✓ Analyzer started (model: {self.model})")
 
-    def classify_titles(self, titles):
-        """
-        Sends a batch of titles to the LLM and extracts JSON responses using Regex.
-        """
+    def classify_titles(self, items):
         prompt = f"""
-        You are a browser history classifier. Assign each title to ONE of these categories:
-        "Education", "Entertainment", "Games", "Adult", "Other".
+        Task: Classify these URLs into categories: "Education", "Games", "Adult", "brain root", "Other".
+        Format: Return ONLY valid JSON objects like this: {{"title": "URL", "category": "category"}}
 
-        Return ONLY valid JSON objects, each on a new line, following this format:
-        {{"title": "title", "category": "category"}}
-
-        Titles: {json.dumps(titles, ensure_ascii=False)}
+        Items to classify:
+        {json.dumps(items, ensure_ascii=False)}
         """
-
         try:
             response = ollama.chat(model=self.model, messages=[{'role': 'user', 'content': prompt}])
             raw_content = response['message']['content']
-
-            # Regex to find all JSON objects regardless of AI conversational filler
             json_matches = re.findall(r'\{.*?\}', raw_content, re.DOTALL)
 
             results = []
             for match in json_matches:
                 try:
-                    obj = json.loads(match)
+                    clean_match = match.replace("'", '"')
+                    obj = json.loads(clean_match)
                     results.append(obj)
                 except json.JSONDecodeError:
                     continue
-
             return results
         except Exception as e:
             print(f"Classification error: {e}")
             return []
 
     def apply_force_filter(self, data):
-        """
-        Manually verifies categories and increments the counters.
-        This acts as a 'hard-coded' safety net for the AI's output.
-        """
         allowed = list(self.counts.keys())
-
+        processed = []
         for item in data:
-            title = item.get("title", "").lower()
+            if not isinstance(item, dict): continue
+            cat = item.get("category", "Other")
+            if cat not in allowed:
+                cat = "Other"
+            item["category"] = cat
+            self.counts[cat] += 1
+            processed.append(item)
+        return processed
 
-            # Rule-based correction (prioritizes certain keywords)
-            if any(word in title for word in ["history", "python", "equation", "recipe", "lesson", "calculus"]):
-                item["category"] = "Education"
-            elif any(word in title for word in ["game", "minecraft", "play", "strategy", "clash"]):
-                item["category"] = "Games"
+    def generate_personality_verdict(self):
+        """
+        Генерирует финальный текстовый вывод на основе собранной статистики.
+        """
+        stats_str = ", ".join([f"{k}: {v}" for k, v in self.counts.items() if v > 0])
 
-            # Fallback for unrecognized categories
-            if item.get("category") not in allowed:
-                item["category"] = "Other"
+        # Промпт для оценки личности
+        prompt = f"""
+        Based on this search history statistics: {stats_str}.
+        Write a very short, witty summary (5 sentences) about this person's interests in Russian.
+        If 'Adult' or 'brain root' is high, be a bit sarcastic. If 'Education' is high, be respectful.
+        """
 
-            # Increment the counter for the final category
-            self.counts[item["category"]] += 1
-
-        return data
+        try:
+            response = ollama.chat(model=self.model, messages=[{'role': 'user', 'content': prompt}])
+            return response['message']['content'].strip()
+        except Exception as e:
+            return "Не удалось сформировать вердикт."
 
     def run_analysis(self, input_file, output_file):
-        """
-        Main execution loop: reads input, processes in batches, and saves the report.
-        """
         try:
-            # Reset counters before starting a new run
-            self.counts = {k: 0 for k in self.counts}
-
             with open(input_file, "r", encoding="utf-8") as f:
                 input_data = json.load(f)
 
-            # Extract titles from the 'history' key in the input JSON
-            titles = [entry.get("title") for entry in input_data.get("history", []) if entry.get("title")]
-            print(f"-> Total titles to process: {len(titles)}")
+            if isinstance(input_data, list):
+                items = [str(x) for x in input_data if x]
+            elif isinstance(input_data, dict):
+                items = [entry.get("title") for entry in input_data.get("history", []) if entry.get("title")]
+            else:
+                raise ValueError("Unsupported JSON format")
 
-            batch_size = 20
+            print(f"-> Total items to process: {len(items)}")
+
+            batch_size = 8
             final_results = []
 
-            for i in range(0, len(titles), batch_size):
+            for i in range(0, len(items), batch_size):
                 print(f"-> Processing batch {i // batch_size + 1}...")
-                batch = titles[i:i + batch_size]
-
-                # Step 1: LLM Classification
+                batch = items[i:i + batch_size]
                 raw_results = self.classify_titles(batch)
-
-                # Step 2: Filtering and Counting
                 processed_results = self.apply_force_filter(raw_results)
-
                 final_results.extend(processed_results)
 
-            # Prepare the final report structure
+            # --- Генерируем финальный вердикт ---
+            print("-> Generating final verdict...")
+            verdict = self.generate_personality_verdict()
+
             report_data = {
                 "summary": {
-                    "total_urls": len(final_results),
-                    "category_counts": self.counts
+                    "total_processed": len(final_results),
+                    "category_counts": self.counts,
+                    "ai_verdict": verdict  # Добавляем в JSON
                 },
                 "details": final_results
             }
 
-            # Save the complete report with statistics to the output file
             with open(output_file, "w", encoding="utf-8") as f:
                 json.dump(report_data, f, ensure_ascii=False, indent=4)
 
             print(f"✓ Success! Data saved to {output_file}")
-
-            # Print a summary to the console for quick reference
-            print("\n" + "=" * 30)
+            print("\n" + "=" * 20)
             print("RUN SUMMARY:")
             for cat, val in self.counts.items():
                 print(f"{cat}: {val}")
-            print("=" * 30)
+            print("-" * 20)
+            print(f"AI VERDICT: {verdict}")
+            print("=" * 20)
 
         except FileNotFoundError:
-            print(f"Error: The file '{input_file}' was not found.")
+            print(f"Error: '{input_file}' not found.")
         except Exception as e:
             print(f"Critical error: {e}")
 
 
 if __name__ == "__main__":
-    # Ensure 'history_data.json' exists in the same directory before running
     analyzer = LocalAnalyzer()
+    # Убедись, что файл существует или замени имя
     analyzer.run_analysis("history_data.json", "final_report.json")
