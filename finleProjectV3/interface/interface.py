@@ -15,7 +15,7 @@ from BigButton.main import run_big_button
 
 SCREEN_WIDTH = 1024
 SCREEN_HEIGHT = 640
-SCREEN_TITLE = "Categorization overview"
+SCREEN_TITLE = "Shtinker"
 
 SIDEBAR_WIDTH = 260
 SIDEBAR_PAD = 18
@@ -247,10 +247,10 @@ class AppWindow(arcade.Window):
 
         if self.active_page == self.VIEW_DASH:
             self._draw_pie(mw * 0.5, SCREEN_HEIGHT * 0.55, 180)
-            arcade.Text("Categorization Overview", mw // 2, SCREEN_HEIGHT - 45, (56, 78, 112), 24, anchor_x="center",
+            arcade.Text("Overview", mw // 2, SCREEN_HEIGHT - 45, (56, 78, 112), 24, anchor_x="center",
                         bold=True).draw()
             self._draw_button(self.ai_report_btn, "Ai report", self._btn_hover_ai)
-            self._draw_button(self.run_all_btn, "RUN ALL", self._btn_hover_run)
+            self._draw_button(self.run_all_btn, "Run all", self._btn_hover_run)
             arcade.Text(self.run_status, self.run_all_btn[0], self.run_all_btn[3] + 8, (76, 96, 126), 11).draw()
         else:
             # AI Report View
@@ -313,4 +313,3 @@ def main():
 
 if __name__ == "__main__":
     main()
-    
