@@ -85,7 +85,7 @@ def run_big_button(
     *,
     start_server_if_needed: bool = True,
     run_ai_analysis: bool = True,
-    model_name: str = "qwen2.5:0.5b",
+    model_name: str = "llama3.2:latest",
     output_report_path: str | Path | None = None,
 ) -> dict:
     """
