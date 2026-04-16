@@ -1,14 +1,14 @@
 {
     "summary": {
-        "total_processed": 53,
+        "total_processed": 94,
         "category_counts": {
             "Education": 15,
-            "Entertainment": 0,
-            "Games": 28,
-            "Adult": 6,
-            "Other": 4
+            "Entertainment": 17,
+            "Games": 16,
+            "Adult": 0,
+            "Other": 61
         },
-        "ai_verdict": "In his search history statistics, the individual has shown strong interest in both education and games. However, if we consider that 'Adult' refers to those aged 25-40 years old (as given), and 'Education' denotes academic pursuits, it appears they might have a preference for adult education or educational materials. If the high value placed on 'Education', one could speculate that this individual may be more invested in learning skills and knowledge than games or other forms of entertainment. However, if 'Adult' is considered low (as shown by the statistics), it suggests an interest that leans towards personal enrichment rather than formal education opportunities. Given these points, I would describe them as someone who enjoys engaging with topics outside their usual interests, particularly educational subjects like Russian, and values a sense of personal growth and learning."
+        "ai_verdict": "It seems our browsing habits are a mixed bag. On one hand, we're learning something new every day (or at least looking up how to do it). But when the lights go out, it's all about the gaming console – and maybe a midnight snack for two. The rest is just \"other stuff\" we don't really want to talk about."
     },
     "details": [
         {
@@ -16,76 +16,168 @@
             "category": "Games"
         },
         {
-            "title": "https://www.youtube.com/watch?v=PiLtCAQGRq0",
+            "title": "https://www.chess.com/play/online/new",
+            "category": "Games"
+        },
+        {
+            "title": "https://www.chess.com/home",
+            "category": "Games"
+        },
+        {
+            "title": "https://www.youtube.com/watch?v=Xq3bNqfs_C8",
+            "category": "Other"
+        },
+        {
+            "title": "https://www.youtube.com/",
+            "category": "Other"
+        },
+        {
+            "title": "https://www.youtube.com/watch?v=dX1YoXAiYcM",
+            "category": "Other"
+        },
+        {
+            "title": "https://www.youtube.com/@1saylorr",
+            "category": "Other"
+        },
+        {
+            "title": "https://www.youtube.com/watch?v=wfmcLgZRdT0",
+            "category": "Games"
+        },
+        {
+            "title": "How to learn Python",
             "category": "Education"
+        },
+        {
+            "title": "Minecraft Free Play",
+            "category": "Games"
         },
         {
             "title": "https://www.youtube.com/@psychometri/videos",
-            "category": "Games"
+            "category": "Other"
         },
         {
             "title": "https://www.youtube.com/@psychometri",
-            "category": "Games"
+            "category": "Other"
         },
         {
             "title": "https://www.youtube.com/shorts/84n9zgADodU",
-            "category": "Adult"
+            "category": "Other"
         },
         {
             "title": "https://www.youtube.com/results?search_query=running+into+scientology+building",
-            "category": "Games"
+            "category": "Other"
         },
         {
             "title": "https://www.youtube.com/shorts/VwR45CraaPw",
-            "category": "Adult"
+            "category": "Other"
         },
         {
             "title": "https://www.youtube.com/shorts/xHlluS2kjSc",
-            "category": "Games"
-        },
-        {
-            "title": "https://www.youtube.com/shorts/XfeFqF_4gks",
-            "category": "Education"
-        },
-        {
-            "title": "https://www.youtube.com/shorts/LpTeJI8ZefA",
-            "category": "Games"
-        },
-        {
-            "title": "https://www.youtube.com/results?search_query=sciantology+trend",
-            "category": "Adult"
-        },
-        {
-            "title": "https://www.youtube.com/shorts/zobbqc7fOeU",
             "category": "Other"
         },
         {
-            "title": "https://www.youtube.com/shorts/ZvzL0e0OCiA",
-            "category": "Adult"
+            "title": "https://www.youtube.com/shorts/jaxpSLEYSTw",
+            "category": "Other"
         },
         {
-            "title": "https://www.youtube.com/shorts/GijqAy-6vUQ",
-            "category": "Games"
-        },
-        {
-            "title": "https://www.youtube.com/shorts/eg3rEI7Xg5E",
+            "title": "How to learn Python",
             "category": "Education"
         },
         {
-            "title": "ChatGPT",
+            "title": "Minecraft Free Play",
+            "category": "Games"
+        },
+        {
+            "title": "sciantology trend",
             "category": "Other"
+        },
+        {
+            "title": "How to improve your memory",
+            "category": "Education"
+        },
+        {
+            "title": "GTA V Walkthrough",
+            "category": "Games"
+        },
+        {
+            "title": "The Science of Happiness",
+            "category": "Education"
+        },
+        {
+            "title": "Fortnite Dance Emotes",
+            "category": "Games"
+        },
+        {
+            "title": " Scientology and Its Effects on Mental Health",
+            "category": "Other"
+        },
+        {
+            "title": "How to learn Python",
+            "category": "Education"
+        },
+        {
+            "title": "Minecraft Free Play",
+            "category": "Games"
+        },
+        {
+            "title": "https://www.youtube.com/shorts/-UHshdO6w8o",
+            "category": "Other"
+        },
+        {
+            "title": "https://www.youtube.com/watch?v=vRFyR7vzzgo",
+            "category": "Other"
+        },
+        {
+            "title": "https://gemini.google.com/u/1/app/345c21c29652e63f?pageId=none",
+            "category": "Other"
+        },
+        {
+            "title": "https://gemini.google.com/u/1/app?pageId=none",
+            "category": "Other"
+        },
+        {
+            "title": "https://gemini.google.com/app",
+            "category": "Other"
+        },
+        {
+            "title": "https://chatgpt.com/",
+            "category": "Other"
+        },
+        {
+            "title": "https://github.com/B3na148/nitzanimPro/blob/main/Semafolder/NitzOlama.py",
+            "category": "Games"
+        },
+        {
+            "title": "https://github.com/B3na148/nitzanimPro/tree/main/Semafolder",
+            "category": "Games"
         },
         {
             "title": "https://github.com/B3na148/nitzanimPro",
-            "category": "Education"
+            "category": "Other"
+        },
+        {
+            "title": "https://github.com/",
+            "category": "Other"
+        },
+        {
+            "title": "https://chatgpt.com/c/69dbf2ba-1948-832d-bb97-54bb78cd99e1",
+            "category": "Other"
+        },
+        {
+            "title": "https://view.genially.com/69db3f201fc16b8ab1ba35ad",
+            "category": "Other"
+        },
+        {
+            "title": "https://web.telegram.org/a/#1447345405",
+            "category": "Games"
         },
         {
             "title": "https://web.telegram.org/a/",
-            "category": "Education"
+            "category": "Other"
         },
         {
             "title": "https://web.whatsapp.com/",
-            "category": "Games"
+            "category": "Other"
         },
         {
             "title": "https://www.m-math.co.il/5/581/work-word-problems/",
@@ -97,131 +189,203 @@
         },
         {
             "title": "https://www.youtube.com/watch?v=uYZjVA6sGU8",
-            "category": "Games"
+            "category": "Entertainment"
         },
         {
-            "title": "https://www.google.com/search?q=%D7%A9%D7%90%D7%9C%D7%95%D7%AA+%D7%94%D7%A1%D7%A4%D7%A7&oq=%D7%A9%D7%90%D7%9C%D7%95%D7%AA+%D7%94%D7%A1%D7%A4%D7%A7&gs_lcrp=EgZjaHJvbWUqCwgAEAAYDRgTGIAEMgsIABAAGA0YExiABDILCAEQABgNGBMYgAQyCggCEAAYExgWGB4yCggDEAAYExgWGB4yDAgEEAAYChgTGBYYHjIKCAUQABgTGBYYHjIHCAgQABjvBTIKCAkQABiABBiiBNIBCDU0MzRqMGo3qAIAsAIA&sourceid=chrome&ie=UTF-8",
-            "category": "Adult"
+            "title": "https://www.google.com/search?q=%D7%A9%D7%90%D7%9C%D7%95%D7%AA+%D7%94%D7%A1%D7%A4%D7%A7&oq=%D7%A9%D7%90%D7%9C%D7%95%D7%AA+%D7%94%D7%A1%D7%A4%D7%A7&gs_lcrp=EgZjaHJvbWUqCwgAEAAYDRgTGIAEMgsIABAAGA0YExiABDILCAEQABgNGBMYgAQyCggCEAAYExgWGB4yCggDEAAYExgWGB4yDAgEEAAYChgTGBYYHjIKCAUQABgTGBYYHjIKCAYQABgTGBYYHjIKCAcQABgTGBYYHjIHCAgQABjvBTIKCAkQABiABBiiBNIBCDU0MzRqMGo3qAIAsAIA&sourceid=chrome&ie=UTF-8",
+            "category": "Other"
+        },
+        {
+            "title": "https://docs.google.com/forms/d/e/1FAIpQLSewkTakNfSGSpQyfByufKroV2C-yj6ucoiTtEiFcN3G7xDoyw/viewform",
+            "category": "Other"
+        },
+        {
+            "title": "https://docs.google.com/forms/d/e/1FAIpQLSewkTakNfSGSpQyfByufKroV2C-yj6ucoiTtEiFcN3G7xDoyw/viewform?usp=send_form",
+            "category": "Other"
         },
         {
             "title": "https://www.psychometry.co.il/uploaded_files/63401895a796c24ede652dbd615a2a70.pdf",
-            "category": "Education"
-        },
-        {
-            "title": "https://docs.google.com/forms/d/e/1FAIpQLSewkTakNfSGSpQyfByufKroV2C-yj6ucoiTtEiFcN3G7xDoyw/formResponse",
-            "category": "Education"
-        },
-        {
-            "title": "https://docs.google.com/forms/u/0/d/e/1FAIpQLSewkTakNfSGSpQyfByufKroV2C-yj6ucoiTtEiFcN3G7xDoyw/viewform?fbzx=-5099194605560133459",
-            "category": "Education"
+            "category": "Other"
         },
         {
             "title": "https://www.google.com/search?q=%D7%91%D7%A2%D7%99%D7%95%D7%AA+%D7%94%D7%A1%D7%A4%D7%A7&oq=%D7%91%D7%A2%D7%99%D7%95%D7%AA+%D7%94%D7%A1%D7%A4%D7%A7&gs_lcrp=EgZjaHJvbWUyBggAEEUYOTIJCAEQABgTGIAEMgkIAhAAGBMYgAQyCQgDEAAYExiABDIJCAQQABgTGIAEMgYIBRBFGD0yBggGEEUYPTIGCAcQRRg80gEJNjc4NDZqMGo3qAIAsAIA&sourceid=chrome&ie=UTF-8",
-            "category": "Games"
+            "category": "Other"
         },
         {
-            "title": "https://docs.google.com/forms/u/0/d/e/1FAIpQLSewkTakNfSGSpQyfByufKroV2C-yj6ucoiTtEiFcN3G7xDoyw/viewform?fbzx=-5099194605560133459",
-            "category": "Games"
+            "title": "https://gemini.google.com/app/4a32c7a57a1e6029",
+            "category": "Other"
         },
         {
-            "title": "https://docs.google.com/forms/d/e/1FAIpQLSewkTakNfSGSpQyfByufKroV2C-yj6ucoiTtEiFcN3G7xDoyw/viewform?fbzx=-5099194605560133459",
-            "category": "Games"
+            "title": "https://docs.google.com/forms/d/e/1FAIpQLSewkTakNfSGSpQyfByufKroV2C-yj6ucoiTtEiFcN3G7xDoyw/viewscore?viewscore=AE0zAgDsQBoxn5lqX51-Tb63w-2kVikot4EwGyWTNqd7gpEQjPuquDrDMXCzafT6W4IFffQ",
+            "category": "Other"
         },
         {
-            "title": "https://docs.google.com/forms/d/e/1FAIpQLSewkTakNfSGSpQyfByufKroV2C-yj6ucoiTtEiFcN3G7xDoyw/viewform?fbzx=-5099194605560133459",
-            "category": "Games"
+            "title": "https://docs.google.com/forms/u/0/d/e/1FAIpQLSewkTakNfSGSpQyfByufKroV2C-yj6ucoiTtEiFcN3G7xDoyw/viewscore?viewscore=AE0zAgDsQBoxn5lqX51-Tb63w-2kVikot4EwGyWTNqd7gpEQjPuquDrDMXCzafT6W4IFffQ",
+            "category": "Other"
         },
         {
-            "title": "https://docs.google.com/forms/d/e/1FAIpQLSewkTakNfSGSpQyfByufKroV2C-yj6ucoiTtEiFcN3G7xDoyw/viewform?fbzx=-5099194605560133459",
-            "category": "Games"
-        },
-        {
-            "title": "https://docs.google.com/forms/d/e/1FAIpQLSewkTakNfSGSpQyfByufKroV2C-yj6ucoiTtEiFcN3G7xDoyw/viewform?fbzx=-5099194605560133459",
-            "category": "Games"
+            "title": "https://docs.google.com/forms/d/e/1FAIpQLSewkTakNfSGSpQyfByufKroV2C-yj6ucoiTtEiFcN3G7xDoyw/formResponse",
+            "category": "Other"
         },
         {
             "title": "https://docs.google.com/forms/d/e/1FAIpQLSewkTakNfSGSpQyfByufKroV2C-yj6ucoiTtEiFcN3G7xDoyw/viewform?fbzx=-5099194605560133459",
-            "category": "Games"
+            "category": "Other"
         },
         {
-            "title": "https://docs.google.com/forms/d/e/1FAIpQLSewkTakNfSGSpQyfByufKroV2C-yj6ucoiTtEiFcN3G7xDoyw/viewform?fbzx=-5099194605560133459",
-            "category": "Games"
+            "title": "https://kibinimatika.org/2021/01/%d7%a7%d7%95%d7%a8%d7%a1-%d7%94%d7%b0%d7%aa-%d7%9c%d7%a6%d7%95-%d7%a8%d7%90%d7%a9%d7%95%d7%9f/",
+            "category": "Other"
         },
         {
             "title": "https://my.mitgaisim.idf.il/exams/exams?id=3",
             "category": "Education"
         },
         {
-            "title": "https://my.mitgaisim.idf.il/exams/subTypes?id=3",
-            "category": "Games"
+            "title": "https://my.mitgaisim.idf.il/exams/subjects?id=3",
+            "category": "Education"
         },
         {
-            "title": "https://my.mitgaisim.idf.il/exams/subjects?id=3",
-            "category": "Games"
+            "title": "https://my.mitgaisim.idf.il/exams/exams?id=6",
+            "category": "Education"
+        },
+        {
+            "title": "https://my.mitgaisim.idf.il/exams/exams?id=7",
+            "category": "Education"
+        },
+        {
+            "title": "https://my.mitgaisim.idf.il/exams/exams?id=8",
+            "category": "Education"
+        },
+        {
+            "title": "https://my.mitgaisim.idf.il/exams/subTypes?id=3",
+            "category": "Education"
         },
         {
             "title": "https://my.mitgaisim.idf.il/exams/lomdot",
-            "category": "Adult"
+            "category": "Games"
         },
         {
-            "title": "https://my.mitgaisim.idf.il/exams/subTypes?id=7",
-            "category": "Games"
+            "title": "https://my.mitgaisim.idf.il/exams/lobby",
+            "category": "Other"
         },
         {
             "title": "https://my.mitgaisim.idf.il/tasks-and-appointments",
             "category": "Education"
         },
         {
-            "title": "Benaya",
+            "title": "https://my.mitgaisim.idf.il/",
+            "category": "Other"
+        },
+        {
+            "title": "https://mail.google.com/mail/u/0/#inbox/FMfcgzQgLPLKNvfplZpWwqfPHQqKKwXt",
+            "category": "Other"
+        },
+        {
+            "title": "https://mail.google.com/mail/u/0/#inbox",
+            "category": "Other"
+        },
+        {
+            "title": "https://my.mitgaisim.idf.il/otpVerification",
+            "category": "Other"
+        },
+        {
+            "title": "https://my.mitgaisim.idf-il/sendOtp",
+            "category": "Other"
+        },
+        {
+            "title": "https://my.mitgaisim.idf.il/login",
             "category": "Education"
         },
         {
-            "title": "https://translate.google.co.il/?hl=iw&sl=ru&tl=iw&text=%D0%A5%D1%80%D0%B8%D1%81%D1%82%D0%BE%D1%81%20%D0%B2%D0%BE%D1%81%D0%BA%D1%80%D0%B5%D1%81&op=translate",
+            "title": "https://www.mitgaisim.idf.il/roles/%D7%9E%D7%A1%D7%9C%D7%95%D7%9C-%D7%A9%D7%97%D7%A7%D7%99%D7%9D/",
+            "category": "Other"
+        },
+        {
+            "title": "How to learn Python",
             "category": "Education"
         },
         {
-            "title": "https://translate.google.co.il/?hl=iw&sl=ru&tl=iw&text=%D1%87%D0%B5%D1%80%D0%B5%D0%B4%D0%B0%20%D1%81%D0%BC%D0%BE%D1%82%D1%80%D0%B5%D1%82%D1%8C&op=translate",
+            "title": "Minecraft Free Play",
+            "category": "Games"
+        },
+        {
+            "title": "https://auth.genially.com/signup?from=view-banner-collapsed&_gl=1*7wmiu6*_gcl_au*MTQ4MTE5MjMzNC4xNzc1OTkwMDk3",
+            "category": "Adult"
+        },
+        {
+            "title": "https://gemini.google.com/app/5e7ecb1f190a807e",
+            "category": "Other"
+        },
+        {
+            "title": "https://gemini.google.com/app/df1e8e720f93950e",
+            "category": "Other"
+        },
+        {
+            "title": "https://play.genially.com/p/69db3f201fc16b8ab1ba35ad/359577/Benaya",
+            "category": "Games"
+        },
+        {
+            "title": "https://play.genially.com/p/69db3f201fc16b8ab1ba35ad/359577?from=lobby",
+            "category": "Other"
+        },
+        {
+            "title": "https://github.com/B3na148/nitzanimPro/tree/main/benayafolder",
+            "category": "Games"
+        },
+        {
+            "title": "https://translate.google.co.il/?hl=iw&sl=ru&tl=iw&op=translate",
+            "category": "Other"
+        },
+        {
+            "title": "https://translate.google.co.il/?hl=iw&sl=ru&tl=iw&text=%D0%A5%D1%80%D0%B8%D1%81%D1%82%D0%BE%D1%81%20%D0%B2%D0%BE%D1%81%D0%BA%D1%80%D0%B5%D1%81",
+            "category": "Other"
+        },
+        {
+            "title": "https://translate.google.co.il/?hl=iw&sl=ru&tl=iw&text=%D0%A5%D1%80%D0%B8%D1%81%D1%82%D0%BE%D1%81",
+            "category": "Other"
+        },
+        {
+            "title": "https://translate.google.co.il/?hl=iw&sl=ru&tl=iw&text=%D0%A5%D1%80%D0%B8",
+            "category": "Other"
+        },
+        {
+            "title": "https://translate.google.co.il/?hl=iw&sl=ru&tl=iw&text=%D0%B2%D0%BE%D1%81%D0%BA%D1%80%D0%B5%D1%81%20%D0%B1%D0%BB%D1%8F%D0%B4%D1%8C%20%D0%B4%D0%B0%20%D0%BD%D0%B5%D1%82%20%D0%BE%D1%82",
+            "category": "Other"
+        },
+        {
+            "title": "https://translate.google.co.il/?hl=iw&sl=ru&tl=iw&text=%D0%B2%D0%BE%D1%81%D0%BA%D1%80%D0%B5%D1%81%20%D0%B1%D0%BB%D1%8F%D0%B4%D1%8C%20%D0%B4%D0%B0%20%D0%BD%D0%B5%D1%82",
+            "category": "Other"
+        },
+        {
+            "title": "https://translate.google.co.il/?hl=iw&sl=ru&tl=iw&text=%D0%B2%D0%BE%D1%81%D0%BA%D1%80%D0%B5%D1%81",
+            "category": "Other"
+        },
+        {
+            "title": "https://translate.google.co.il/?hl=iw&sl=ru&tl=iw&text=%D1%87%D0%B5%D1%80%D0%B5%D0%B4%D0%B0%20%D1%81%D0%BC%D0%BE%D1%82%D1%80%D0%B5%D1%82%D1%8C%20%D0%A5%D1%80%D0%B8%D1%81%D1%82%D0%BE%D1%81%20%D0%B2%D0%BE%D1%88%D0%BA%D1%80%D0%B5%D1%81%20%D1%87%D1%82%D0%BE%20%D0%B1%D0%BB%D1%8F%D0%B4%D1%8C%20%D1%87%D0%B5%D1%80%D0%B5%D0%B4%D0%B0%20%D1%81%D0%BC%D0%BE%D1%82%D1%80%D0%B8%D1%82%D1%81%D1%8F&op=translate",
             "category": "Education"
         },
         {
-            "title": "https://translate.google.co.il/?hl=iw&sl=ru&tl=iw&text=%D1%87%D0%B5%D1%80%D0%B5%D0%B4%D0%B0%20%D1%81%D0%BC%D0%BE%D1%82%D1%80%D0%B5%D1%82%D1%8C&op=translate",
-            "category": "Education"
+            "title": "https://translate.google.co.il/?hl=iw&sl=ru&tl=iw&text=%D1%87%D0%B5%D1%80%D0%B5%D0%B4%D0%B0%20%D1%81%D0%BC%D0%BE%D1%82%D1%80%D0%B5%D1%82%D1%8C%20%D0%A5%D1%80%D0%B8%D1%81%D1%82%D0%BE%D1%81%20%D0%B2%D0%BE%D1%88%D0%BA%D1%80%D0%B5%D1%81%20%D1%87%D1%82%D0%BE%20%D0%B1%D0%BB%D1%8F%D0%B4%D1%8C%20%D1%91%D0%B2%D1%80%D0%B0%20%D1%87%D0%B5%D1%80%D0%B5%D0%B4%D0%B0%20%D1%81%D0%BC%D0%BE%D1%82%D1%80%D0%B8%D1%82%D1%81%D1%8F&op=translate",
+            "category": "Other"
         },
         {
-            "title": "https://translate.google.co.il/?hl=iw&sl=ru&tl=iw&text=%D1%87%D0%B5%D1%80%D0%B5%D0%B4%D0%B0%20%D1%81%D0%BC%D0%BE%D1%82%D1%80%D0%B5%D1%82%D1%8C&op=translate",
-            "category": "Games"
+            "title": "https://translate.google.co.il/?hl=iw&sl=ru&tl=iw&text=%D1%87%D0%B5%D1%80%D0%B5%D0%B4%D0%B0%20%D1%81%D0%BC%D0%BE%D1%82%D1%80%D0%B5%D1%82%D1%8C%20%D0%A5%D1%80%D0%B8%D1%81%D1%82%D0%BE%D1%81%20%D0%B2%D0%BE%D1%88%D0%BA%D1%80%D0%B5%D1%81%20%D1%87%D1%82%D0%BE%20%D0%B1%D0%BB%D1%8F%D0%B4%D1%8C%20%D1%91%D0%B2%D1%80%D0%B0&op=translate",
+            "category": "Other"
         },
         {
-            "title": "https://translate.google.co.il/?hl=iw&sl=ru&tl=iw&text=%D1%87%D0%B5%D1%80%D0%B5%D0%B4%D0%B0%20%D1%81%D0%BC%D0%BE%D1%82%D1%80%D0%B5%D1%82%D1%8C&op=translate",
-            "category": "Games"
+            "title": "https://translate.google.co.il/?hl=iw&sl=ru&tl=iw&text=%D1%87%D0%B5%D1%80%D0%B5%D0%B4%D0%B0%20%D1%81%D0%BC%D0%BE%D1%82%D1%80%D0%B5%D1%82%D1%8C%20%D0%A5%D1%80%D0%B8%D1%81%D1%82%D0%BE%D1%81%20%D0%B2%D0%BE%D1%88%D0%BA%D1%80%D0%B5%D1%81&op=translate",
+            "category": "Other"
         },
         {
-            "title": "https://translate.google.co.il/?hl=iw&sl=ru&tl=iw&text=%D1%87%D0%B5%D1%80%D0%B5%D0%B4%D0%B0%20%D1%81%D0%BC%D0%BE%D1%82%D1%80%D0%B5%D1%82%D1%8C&op=translate",
-            "category": "Games"
+            "title": "https://translate.google.co.il/?hl=iw&sl=ru&tl=iw&text=%D1%85%D0%B0%D1%80%D0%B8%D1%82%D0%BE%20%D1%81%D0%BC%D0%BE%D1%82%D1%80%D0%B8&op=translate",
+            "category": "Other"
         },
         {
-            "title": "https://translate.google.co.il/?hl=iw&sl=ru&tl=iw&text=%D1%87%D0%B5%D1%80%D0%B5%D0%B4%D0%B0%20%D1%81%D0%BC%D0%BE%D1%82%D1%80%D0%B5%D1%82%D1%8C&op=translate",
-            "category": "Games"
+            "title": "https://translate.google.co.il/?hl=iw&sl=ru&tl=iw&text=%D1%85%D1%81%D1%80%D1%8F%D1%82%D0%BE%D0%B2%D0%B0&op=translate",
+            "category": "Other"
         },
         {
-            "title": "https://translate.google.co.il/?hl=iw&sl=ru&tl=iw&text=%D1%87%D0%B5%D1%80%D0%B5%D0%B4%D0%B0%20%D1%81%D0%BC%D0%BE%D1%82%D1%80%D0%B5%D1%82%D1%8C&op=translate",
-            "category": "Games"
-        },
-        {
-            "title": "https://translate.google.co.il/?hl=iw&sl=ru&tl=iw&text=%D1%87%D0%B5%D1%80%D0%B5%D0%B4%D0%B0%20%D1%81%D0%BC%D0%BE%D1%82%D1%80%D0%B5%D1%82%D1%8C&op=translate",
-            "category": "Games"
-        },
-        {
-            "title": "https://translate.google.co.il/?hl=iw&sl=ru&tl=iw&text=%D1%87%D0%B5%D1%80%D0%B5%D0%B4%D0%B0%20%D1%81%D0%BC%D0%BE%D1%82%D1%80%D0%B5%D1%82%D1%8C&op=translate",
-            "category": "Games"
-        },
-        {
-            "title": "https://translate.google.co.il/?hl=iw&sl=ru&tl=iw&text=%D1%87%D0%B5%D1%80%D0%B5%D0%B4%D0%B0%20%D1%81%D0%BC%D0%BE%D1%82%D1%80%D0%B5%D1%82%D1%8C&op=translate",
-            "category": "Games"
-        },
-        {
-            "title": "https://translate.google.co.il/?hl=iw&sl=ru&tl=iw&text=%D0%A7%D0%B5%D1%80%D0%B5&op=translate",
-            "category": "Education"
+            "title": "https://translate.google.co.il/?hl=iw&sl=ru&tl=iw&text=%D1%85%D0%B8%D1%80%D0%BE%D1%82%D0%BE&op=translate",
+            "category": "Other"
         }
     ]
 }
