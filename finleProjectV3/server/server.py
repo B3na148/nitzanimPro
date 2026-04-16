@@ -23,8 +23,6 @@ def save_history():
         json.dump(data, f, indent=2)
 
     return {"status": "saved", "file": filename}, 200
-    #run categorization.py
-    os.system("python categorization.py")
 
 if __name__ == '__main__':
     app.run(port=5000)
