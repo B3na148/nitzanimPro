@@ -3,10 +3,10 @@
         "total_processed": 94,
         "category_counts": {
             "Education": 15,
-            "Entertainment": 17,
+            "Entertainment": 27,
             "Games": 16,
-            "Adult": 0,
-            "Other": 61
+            "Adult": 11,
+            "Other": 19
         },
         "ai_verdict": "It seems our browsing habits are a mixed bag. On one hand, we're learning something new every day (or at least looking up how to do it). But when the lights go out, it's all about the gaming console – and maybe a midnight snack for two. The rest is just \"other stuff\" we don't really want to talk about."
     },
