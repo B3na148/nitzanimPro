@@ -4,7 +4,7 @@ import ollama
 
 
 class LocalAnalyzer:
-    def __init__(self, model_name="qwen2.5:0.5b"):
+    def __init__(self, model_name="llama3.2:latest"):
         self.model = model_name
         self.counts = {
             "Education": 0,
@@ -17,12 +17,25 @@ class LocalAnalyzer:
 
     def classify_titles(self, items):
         prompt = f"""
-        Task: Classify these URLs into categories: "Education", "Games", "Adult", "Other".
-        Format: Return ONLY valid JSON objects like this: {{"title": "URL", "category": "category"}}
+                You are a high-precision data classifier. 
+                Task: Classify the following list of search titles into EXACTLY ONE of these categories: 
+                "Education", "Entertainment", "Games", "Adult", or "Other".
 
-        Items to classify:
-        {json.dumps(items, ensure_ascii=False)}
-        """
+                Rules:
+                1. Return ONLY a valid JSON list of objects.
+                2. Do not include any introductory text, explanations, or markdown code blocks.
+                3. If a title is ambiguous, classify it as "Other".
+                4. Use the exact keys: "title" and "category".
+
+                Example Output:
+                [
+                    {{"title": "How to learn Python", "category": "Education"}},
+                    {{"title": "Minecraft Free Play", "category": "Games"}}
+                ]
+
+                Items to classify:
+                {json.dumps(items, ensure_ascii=False)}
+                """
         try:
             response = ollama.chat(model=self.model, messages=[{'role': 'user', 'content': prompt}])
             raw_content = response['message']['content']
@@ -55,23 +68,20 @@ class LocalAnalyzer:
         return processed
 
     def generate_personality_verdict(self):
-        """
-        Генерирует финальный текстовый вывод на основе собранной статистики.
-        """
+
         stats_str = ", ".join([f"{k}: {v}" for k, v in self.counts.items() if v > 0])
 
-        # Промпт для оценки личности
+
         prompt = f"""
         Based on this search history statistics: {stats_str}.
-        Write a very short, witty summary (5 sentences) about this person's interests in Russian.
-        If 'Adult' is high, be a bit sarcastic. If 'Education' is high, be respectful.
+        Write a very short, witty summary (5 sentences).
         """
 
         try:
             response = ollama.chat(model=self.model, messages=[{'role': 'user', 'content': prompt}])
             return response['message']['content'].strip()
         except Exception as e:
-            return "Не удалось сформировать вердикт."
+            return "a model problem."
 
     def run_analysis(self, input_file, output_file):
         try:
@@ -97,7 +107,7 @@ class LocalAnalyzer:
                 processed_results = self.apply_force_filter(raw_results)
                 final_results.extend(processed_results)
 
-            # --- Генерируем финальный вердикт ---
+
             print("-> Generating final verdict...")
             verdict = self.generate_personality_verdict()
 
@@ -105,7 +115,7 @@ class LocalAnalyzer:
                 "summary": {
                     "total_processed": len(final_results),
                     "category_counts": self.counts,
-                    "ai_verdict": verdict  # Добавляем в JSON
+                    "ai_verdict": verdict
                 },
                 "details": final_results
             }
@@ -130,5 +140,5 @@ class LocalAnalyzer:
 
 if __name__ == "__main__":
     analyzer = LocalAnalyzer()
-    # Убедись, что файл существует или замени имя
+
     analyzer.run_analysis("history_data.json", "final_report.json")
