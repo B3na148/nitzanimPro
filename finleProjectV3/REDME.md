@@ -37,5 +37,8 @@ To run this project successfully, ensure you have the following installed:
 * NOTE: you can select lighter model like Qwen model. and change it in model name.
 * **Google Chrome Browser**
 
-*note to start the program just run the interface.py file.
-*finle note, i putted a example for finle report in the server folder so you don't have to run the model :)
+note to start the program just run the interface.py file.
+finle note, i putted a example for finle report in the server folder so you don't have to run the model :)
+last finle note: i (benaya) coded the chrome extension and the server alone (without ai) . 
+(only asking about the commands i use).
+the rest is mixed with ai use.
