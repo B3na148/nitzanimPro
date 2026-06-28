@@ -41,6 +41,6 @@ note to start the program just run the interface.py file. finle note, i putted a
 
 last finle note:
 
-i (benaya) coded the chrome extension and the server alone (without ai) . 
+(benaya) coded the chrome extension and the server alone (without ai) . 
 
 (only asking about the commands i use). the rest is mixed with ai use.
